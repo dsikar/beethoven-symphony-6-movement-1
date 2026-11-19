@@ -8,9 +8,9 @@ Public repository: [dsikar/beethoven-symphony-6-movement-1](https://github.com/d
 
 The user authorized merging [PR #9](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/9) and [PR #11](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/11). Both are merged into main (`cd94652`); issues #1 and #10 are closed. The score has 512 bars, 15 staves, the verified rehearsal figures and 15 Muse Sounds assignments. Both horn solo flags are cleared for full-orchestra playback.
 
-The user then explicitly instructed work on [issue #2](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/2). Branch `feature/2-missing-dynamics` restores 34 confirmed staff/bar omissions: two piano markings (Violin II 65, Viola 67), Clarinet I dolce at 147, and 31 missing poco a poco/sempre qualifiers. See [`docs/issue-2-dynamics-audit.md`](docs/issue-2-dynamics-audit.md) for every instrument/bar/reference and actual checks. No later musical ticket has started.
+The user then explicitly instructed work on [issue #2](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/2). Branch `feature/2-missing-dynamics` restores 34 confirmed staff/bar omissions: two piano markings (Violin II 65, Viola 67), Clarinet I dolce at 147, and 31 missing poco a poco/sempre qualifiers. See [`docs/issue-2-dynamics-audit.md`](docs/issue-2-dynamics-audit.md) for every instrument/bar/reference and actual checks. These changes are in [PR #12](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/12), which the user has now approved for merging. No later musical ticket has started.
 
-A user question remains pending: should the swell at 293–296, printed above the combined clarinet staff and already applied to Clarinet I, also apply to Clarinet II? Clarinet II remains unchanged. The #2 PR must reference the issue without closing it until this reading is settled. Do not merge the #2 PR without a new user instruction.
+On 19 November 2026 the user instructed: “Ok merge and we will leave clarinets for now.” Leave Clarinet II at 293–296 unchanged; the above-staff swell ambiguity is explicitly deferred. PR #12 is authorized for merging and #2 can close on this accepted scope. The next musical ticket is #3; await direction before starting it.
 
 ## Validation and preserved state
 
@@ -27,12 +27,11 @@ The horns are encoded in F. Historical bass-clef sounding-pitch interpretation s
 
 ## Remaining musical tickets
 
-1. [#2: Audit and restore confirmed missing dynamic markings](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/2) — current branch; confirmed restorations ready for review, one clarinet reading pending.
-2. [#3: Remove red analytical letter annotations](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/3)
-3. [#4: Create B-flat trumpet staves at verified horn sounding pitches](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/4)
-4. [#5: Adapt trumpet register while preserving both horn chord tones](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/5)
-5. [#6: Prepare linked B-flat trumpet parts and PDFs](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/6)
-6. [#7: Remove redundant a. 2 markings](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/7)
-7. [#8: Export movement I MP3 with trumpets and no horns](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/8)
+1. [#3: Remove red analytical letter annotations](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/3)
+2. [#4: Create B-flat trumpet staves at verified horn sounding pitches](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/4)
+3. [#5: Adapt trumpet register while preserving both horn chord tones](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/5)
+4. [#6: Prepare linked B-flat trumpet parts and PDFs](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/6)
+5. [#7: Remove redundant a. 2 markings](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/7)
+6. [#8: Export movement I MP3 with trumpets and no horns](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/8)
 
 Keep each ticket focused, use feature branches and PRs, and await the user's direction before moving to the next musical ticket. Do not edit the historical `../movement-1/` or active `../movement-2/` checkout, import their musical decisions automatically, or launch sub-agents without explicit user instruction.
