@@ -8,6 +8,8 @@ Published publicly with the user's explicit authorization on 19 November 2026: [
 
 ## Starting state and scope
 
+Issue #1 has now been implemented on `feature/1-audit-rehearsal-figures`, pending PR review; do not merge or start #2 without the user's instruction. See [`docs/issue-1-baseline-and-rehearsal-audit.md`](docs/issue-1-baseline-and-rehearsal-audit.md) for the baseline comparison, scan evidence and actual validation. The verified rehearsal map is A=53, B=93, C=115, D=151, E=197, F=263, G=312, H=372, I=440, K=476. Native system marks were added without other score changes. The original Horn II bar 38 local edit and both horns' solo settings remain preserved. All immutable hashes still match. MuseScore 4.7.5 PDF rendering, inspection of all ten affected pages and a temporary native-save round trip passed. Historical horn bass-clef pitch audit remains work for #4; no pitch correction was made here.
+
 Read `AGENTS.md`, `README.md` and `SOURCE-PROVENANCE.md`. Setup copied the saved local working score unchanged and verified the independent upstream original. No musical edits have been made. Preserve the initial working score's existing differences from upstream; audit them before editing. Do not replace it with the upstream file or a historical adapted draft.
 
 The neighbouring `../movement-1/` is the preserved historical workspace; `../movement-2/` is a different active repository where DeepSeek is handling cue-rest placement. Do not modify either. Movement II's workflow is useful, but its B♭ basso transposition, cue notes, bar numbers and rehearsal map are not applicable to movement I.
