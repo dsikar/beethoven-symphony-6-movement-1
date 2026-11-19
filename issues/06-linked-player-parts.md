@@ -1,6 +1,6 @@
 # Prepare linked B-flat trumpet player parts and PDF exports
 
-Status: local draft; no GitHub issue number has been assigned.
+GitHub issue: [#6](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/6)
 
 ## Requested change
 
@@ -12,4 +12,4 @@ Export separate Trumpet 1 and Trumpet 2 PDFs, add only their exact paths to the 
 
 ## Workflow and validation
 
-Read `AGENTS.md` and `SOURCE-PROVENANCE.md`. Work only in this movement I repository, editing `source/Beethoven_Op.68_1.mscz` after this draft has been published as a GitHub feature-request issue. Use `feature/<actual-issue-number>-<short-description>`, reference the issue in commits and a PR, and report actual affected bars/instruments and checks performed. Keep `originals/` and `references/` immutable. Preserve unrelated edits and files. Open the PR for review; do not merge without the user's instruction.
+Read `AGENTS.md` and `SOURCE-PROVENANCE.md`. Work only in this movement I repository, editing `source/Beethoven_Op.68_1.mscz` under this GitHub feature-request issue. Use `feature/<actual-issue-number>-<short-description>`, reference the issue in commits and a PR, and report actual affected bars/instruments and checks performed. Keep `originals/` and `references/` immutable. Preserve unrelated edits and files. Open the PR for review; do not merge without the user's instruction.

@@ -1,6 +1,6 @@
 # Export movement I MP3 with trumpets and no horns
 
-Status: local draft; no GitHub issue number has been assigned.
+GitHub issue: [#8](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/8)
 
 ## Requested change
 
@@ -10,4 +10,4 @@ Preserve the final pitches, register, tempo, dynamics and articulation. Verify m
 
 ## Workflow and validation
 
-Read `AGENTS.md` and `SOURCE-PROVENANCE.md`. Work only in this movement I repository, editing `source/Beethoven_Op.68_1.mscz` after this draft has been published as a GitHub feature-request issue. Use `feature/<actual-issue-number>-<short-description>`, reference the issue in commits and a PR, and report actual affected bars/instruments and checks performed. Keep `originals/` and `references/` immutable. Preserve unrelated edits and files. Open the PR for review; do not merge without the user's instruction.
+Read `AGENTS.md` and `SOURCE-PROVENANCE.md`. Work only in this movement I repository, editing `source/Beethoven_Op.68_1.mscz` under this GitHub feature-request issue. Use `feature/<actual-issue-number>-<short-description>`, reference the issue in commits and a PR, and report actual affected bars/instruments and checks performed. Keep `originals/` and `references/` immutable. Preserve unrelated edits and files. Open the PR for review; do not merge without the user's instruction.

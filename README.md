@@ -23,7 +23,7 @@ Open the canonical score in MuseScore Studio 4. Inspect its existing sound assig
 
 ## Work sequence
 
-Audit the starting score and rehearsal figures, check missing dynamics, remove red analytical annotations, create exact-sounding-pitch B♭ trumpet staves, adapt register using documented octave changes, prepare linked player parts and PDFs with silent cues, remove redundant “a. 2” instructions, then export the final orchestral MP3 with trumpets audible and horns muted. Each step has a separate local issue draft; consult `NEXT-SESSION.md` for publication status, links and dependencies. GitHub publication is pending explicit approval to upload the score/reference files.
+Audit the starting score and rehearsal figures, check missing dynamics, remove red analytical annotations, create exact-sounding-pitch B♭ trumpet staves, adapt register using documented octave changes, prepare linked player parts and PDFs with silent cues, remove redundant “a. 2” instructions, then export the final orchestral MP3 with trumpets audible and horns muted. The public [GitHub repository](https://github.com/dsikar/beethoven-symphony-6-movement-1) tracks these steps as issues #1–#8; consult `NEXT-SESSION.md` for links and dependencies. The `issues/` files retain the published task specifications.
 
 The neighboring `../movement-1/` folder contains historical drafts, cue notes and video work. It is preserved outside this repository. Its `source/Beethoven_Op.68_1_with_trumpets_1_2.mscz` and autosave are separate older adaptations; they have not been imported or endorsed as the new canonical score. Inspect older drafts read-only when useful, and carry no musical decisions across without checking them against current sources.
 
