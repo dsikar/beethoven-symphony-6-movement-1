@@ -2,33 +2,36 @@
 
 Work in `/home/daniel/Documents/music/Beethoven/Symphony-6/beethoven-symphony-6-movement-1`.
 
-## Repository status
+## Current status
 
-Published publicly with the user's explicit authorization on 19 November 2026: [dsikar/beethoven-symphony-6-movement-1](https://github.com/dsikar/beethoven-symphony-6-movement-1). The score, upstream original and reference PDFs are uploaded; the eight feature-request issues below are open. No further publication approval is pending for this setup.
+Public repository: [dsikar/beethoven-symphony-6-movement-1](https://github.com/dsikar/beethoven-symphony-6-movement-1). Publication was explicitly authorized and is complete.
 
-## Starting state and scope
+The user authorized merging [PR #9](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/9) and [PR #11](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/11). Both are merged into main (`cd94652`); issues #1 and #10 are closed. The score has 512 bars, 15 staves, the verified rehearsal figures and 15 Muse Sounds assignments. Both horn solo flags are cleared for full-orchestra playback.
 
-Subsequent user request: [issue #10](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/10) assigns installed Muse Sounds to all 15 orchestral staves on `feature/10-orchestral-muse-sounds`, based on the still-unmerged rehearsal branch. Both horn solo flags are now cleared for full-orchestra playback. Only the archive's audio settings changed. See [`docs/issue-10-muse-sounds.md`](docs/issue-10-muse-sounds.md) for the mapping, native save/load checks and articulation-range errors reported during loading. All 15 samplers initialized successfully; listening was not tested. The original ordered musical tickets remain separate, and neither PR is authorized for merging.
+The user then explicitly instructed work on [issue #2](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/2). Branch `feature/2-missing-dynamics` restores 34 confirmed staff/bar omissions: two piano markings (Violin II 65, Viola 67), Clarinet I dolce at 147, and 31 missing poco a poco/sempre qualifiers. See [`docs/issue-2-dynamics-audit.md`](docs/issue-2-dynamics-audit.md) for every instrument/bar/reference and actual checks. These changes are in [PR #12](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/12), which the user has now approved for merging. No later musical ticket has started.
 
-Issue #1 has now been implemented on `feature/1-audit-rehearsal-figures` in [PR #9](https://github.com/dsikar/beethoven-symphony-6-movement-1/pull/9), pending review; do not merge or start #2 without the user's instruction. See [`docs/issue-1-baseline-and-rehearsal-audit.md`](docs/issue-1-baseline-and-rehearsal-audit.md) for the baseline comparison, scan evidence and actual validation. The verified rehearsal map is A=53, B=93, C=115, D=151, E=197, F=263, G=312, H=372, I=440, K=476. Native system marks were added without other score changes. The original Horn II bar 38 local edit and both horns' solo settings remain preserved. All immutable hashes still match. MuseScore 4.7.5 PDF rendering, inspection of all ten affected pages and a temporary native-save round trip passed. Historical horn bass-clef pitch audit remains work for #4; no pitch correction was made here.
+On 19 November 2026 the user instructed: “Ok merge and we will leave clarinets for now.” Leave Clarinet II at 293–296 unchanged; the above-staff swell ambiguity is explicitly deferred. PR #12 is authorized for merging and #2 can close on this accepted scope. The next musical ticket is #3; await direction before starting it.
 
-Read `AGENTS.md`, `README.md` and `SOURCE-PROVENANCE.md`. Setup copied the saved local working score unchanged and verified the independent upstream original. No musical edits were made during setup; the rehearsal additions above were made subsequently for #1. Preserve the initial working score's existing differences from upstream; audit them before editing. Do not replace it with the upstream file or a historical adapted draft.
+## Validation and preserved state
 
-The neighbouring `../movement-1/` is the preserved historical workspace; `../movement-2/` is a different active repository where DeepSeek is handling cue-rest placement. Do not modify either. Movement II's workflow is useful, but its B♭ basso transposition, cue notes, bar numbers and rehearsal map are not applicable to movement I.
+Issue #2 rendered successfully in MuseScore 4.7.5, and all 34 changes survived a temporary native save. All eight changed PDF pages were inspected; the score remains 59 pages. The other 51 pages have identical extracted text and coordinates. Review PDF: `/tmp/beethoven-m1-dynamics/dynamics.pdf` (temporary, not committed). Every non-notation archive payload, including all audio assignments and automation, remains byte-identical. No audio/video was exported or audible playback check performed.
 
-## Open tickets
+Read `AGENTS.md`, `README.md` and `SOURCE-PROVENANCE.md`. Preserve the working score's existing differences from upstream; never replace it with upstream or an old adapted draft. The Horn II bar 38 local note edit remains preserved. Keep `originals/` and `references/` immutable; their hashes still match provenance.
 
-1. [Audit the starting score and establish movement I rehearsal figures](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/1)
-2. [Audit and restore confirmed missing dynamic markings](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/2)
-3. [Remove red analytical letter annotations from the orchestral score](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/3)
-4. [Create B-flat trumpet staves at the verified horn sounding pitches](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/4)
-5. [Adapt B-flat trumpet register while preserving both horn chord tones](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/5)
-6. [Prepare linked B-flat trumpet player parts and PDF exports](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/6)
-7. [Remove redundant a. 2 markings from the orchestral score and linked parts](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/7)
-8. [Export movement I MP3 with trumpets and no horns](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/8)
+Prior audits:
 
-The initial instruction was to action only [issue #1](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/1): audit the baseline and establish rehearsal figures from the actual references, resolving uncertain letter locations before making unverified edits. Preserve the other tickets for separate branches and review checkpoints. Issue #1 already tracks this work; use its feature branch and preserve the other issues as separate checkpoints.
+- [`docs/issue-1-baseline-and-rehearsal-audit.md`](docs/issue-1-baseline-and-rehearsal-audit.md): A=53, B=93, C=115, D=151, E=197, F=263, G=312, H=372, I=440, K=476; all historical rehearsal uncertainties resolved.
+- [`docs/issue-10-muse-sounds.md`](docs/issue-10-muse-sounds.md): installed Muse Woodwinds, Muse Brass and Muse Strings mapping. All 15 samplers initialized successfully in an application load, which also reported 25 ranged-articulation end errors. Their audible effect remains unassessed; no articulation changes have been made to suppress them.
 
-The former movement I drafts contain uncertain rehearsal mappings and earlier register substitutions. Do not treat them as approved decisions. The movement I source horns are encoded in F; verify historical bass-clef interpretation against printed parts and harmony. Do not change tempo, export audio/video, import old trumpet parts or start additional workers during the first ticket.
+The horns are encoded in F. Historical bass-clef sounding-pitch interpretation still requires a full passage audit in #4; no pitch/register correction has been made. Do not apply movement II's B-flat basso interpretation or bar numbers.
 
-PR #9 records the validated first ticket. It remains open and unmerged; issue #1 will close only when the PR is merged. No rehearsal-map ambiguity remains. Await the user's review and instruction before merging or beginning #2.
+## Remaining musical tickets
+
+1. [#3: Remove red analytical letter annotations](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/3)
+2. [#4: Create B-flat trumpet staves at verified horn sounding pitches](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/4)
+3. [#5: Adapt trumpet register while preserving both horn chord tones](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/5)
+4. [#6: Prepare linked B-flat trumpet parts and PDFs](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/6)
+5. [#7: Remove redundant a. 2 markings](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/7)
+6. [#8: Export movement I MP3 with trumpets and no horns](https://github.com/dsikar/beethoven-symphony-6-movement-1/issues/8)
+
+Keep each ticket focused, use feature branches and PRs, and await the user's direction before moving to the next musical ticket. Do not edit the historical `../movement-1/` or active `../movement-2/` checkout, import their musical decisions automatically, or launch sub-agents without explicit user instruction.
